@@ -10,7 +10,7 @@ var handler = createHandler({
 });
 
 http.createServer((req, res) => {
-	handler(req, res, res.statusCode(404).end("Not found"));
+	handler(req, res, res.end("Not found"));
 }).listen(7777, () => console.log("Starting webhook handler..."));
 
 handler.on("error", console.error);
