@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Killing currently running processes..."
+killall node
+
+echo "Pulling latest code..."
 git pull
 
 echo "Building frontend..."
