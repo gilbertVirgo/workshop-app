@@ -20,3 +20,5 @@ handler.on("push", () => {
 
 	exec(`bash ./deploy.sh >> ./local`);
 });
+
+// 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
